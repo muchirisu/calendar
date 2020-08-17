@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カレンダー</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+  <table>
+    <thead>
+      <!-- 見出し部分を作る -->
+      <tr>
+        <!-- 左側の山並み括弧 -->
+        <th id="prev">&laquo;</th>
+        <!-- -- colspanで5列分の幅を占有 -- -->
+        <th id="title" colspan="5">2020/05</th>
+        <!-- 右側の山並み括弧 -->
+        <th id="next">&raquo;</th>
+      </tr>
+      <!-- 曜日を作る -->
+      <tr>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+      </tr>
+    </thead>
+    <tbody>
+  
+    </tbody> 
+    <tfoot>
+      <tr>
+        <td id="today" colspan="7">Today</td>
+      </tr>
+    </tfoot>
+  </table>
+  
+  <script src="js/main.js"></script>
+</body>
+</html> 

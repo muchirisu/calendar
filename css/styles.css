@@ -1,0 +1,50 @@
+body {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+
+}
+
+table {
+  /* 隣接するボーダーを重ねて表示し、隙間をなくす */
+  border-collapse: collapse; 
+  border: 2px solid #eee;
+}
+
+thead,
+tfoot {
+  background: #eee;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+/* 表の列の一番最初の要素 */
+tbody td:first-child {
+  color: red;
+}
+/* 表の列の一番最後の要素 */
+tbody td:last-child {
+  color: blue;
+}
+
+tfoot {
+  font-weight: bold;
+}
+/* 前月と翌月の分の日付の色を薄くする disableclassがついたら*/
+td.disabled {
+  opacity: 0.3;
+}
+/* 今日の日付を太くする todayclassがついたら */
+td.today {
+  font-weight: bold;
+}
+/* クリックしやすいような見た目をつける */
+#prev,
+#next,
+#today {
+  cursor: pointer;
+  /* クリックして文字列が選択されないようにする（青くされないようにする ） */
+  user-select: none;
+}
